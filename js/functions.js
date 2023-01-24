@@ -99,11 +99,11 @@ alert("You will be tipping $" + tipCalculated.toFixed(2) );
  *
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
-//var itemPrice = prompt("How much is your item?")
-//var discountPercent = prompt("What percentage of a discount do you have?")
+var itemPrice = prompt("How much is your item?")
+var discountPercent = prompt("What percentage of a discount do you have?")
 
-//function applyDiscount() {
-//   return (itemPrice - (itemPrice * discountPercent))
-//}
-//alert("Nice! Your total price after discounts comes out to; $" + applyDiscount())
-//console.log(applyDiscount())
+function applyDiscount() {
+   return (itemPrice - (itemPrice * discountPercent))
+}
+alert("Nice! Your total price after discounts comes out to; $" + applyDiscount())
+console.log(applyDiscount())
