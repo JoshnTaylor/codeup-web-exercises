@@ -69,8 +69,8 @@ var y = prompt("How much would you like to tip today?")
 function calculateTip(x,y) {
     return parseFloat(x * y)
 };
-console.log(calculateTip(x,y))
-alert("You will be tipping $" + calculateTip(x,y) );
+var tipCalculated = calculateTip(x,y);
+alert("You will be tipping $" + tipCalculated.toFixed(2) );
 /**
  * TODO:
  * Use prompt and alert in combination with your calculateTip function to
