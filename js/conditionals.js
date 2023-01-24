@@ -23,25 +23,25 @@
  */
 
 
-function analyzeColor(x) {
-    if (x === "red") {
-    console.log("Nice! Red is the color of an apple!")
-} else if (x === "orange") {
-    console.log("Cool! Orange is the color of an orange!")
-} else if (x === "yellow") {
-    console.log("Sweet! Yellow is the color of a lemon!")
-} else if (x === "green") {
-    console.log("Wicked! Green is the color of a lime!")
-} else if (x === "blue") {
-    console.log("Excellent! Blue is the color of a blueberry!")
-} else if (x === "indigo") {
-    console.log("Phenomenal! Indigo is the color of a plum!")
-} else if (x === "violet") {
-        console.log("Epic! Violet is the color of raspberries!")
-}else {
-    console.log("Huh... I haven't heard of " + x + " before.")
-}};
-analyzeColor("orange")
+//function analyzeColor(x) {
+//    if (x === "red") {
+//    console.log("Nice! Red is the color of an apple!")
+//} else if (x === "orange") {
+//    console.log("Cool! Orange is the color of an orange!")
+//} else if (x === "yellow") {
+//    console.log("Sweet! Yellow is the color of a lemon!")
+//} else if (x === "green") {
+//     console.log("Wicked! Green is the color of a lime!")
+// } else if (x === "blue") {
+//     console.log("Excellent! Blue is the color of a blueberry!")
+// } else if (x === "indigo") {
+//     console.log("Phenomenal! Indigo is the color of a plum!")
+// } else if (x === "violet") {
+//         console.log("Epic! Violet is the color of raspberries!")
+// }else {
+//     console.log("Huh... I haven't heard of " + x + " before.")
+// }};
+//analyzeColor("orange")
 // Don't change the next two lines!
 // These lines create two variables for you:
 // - `colors`: a list of the colors of the rainbow
@@ -55,25 +55,25 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * You should see a different message every time you refresh the page
  */
 
-console.log("Your random color was; " + randomColor);
-analyzeColor(randomColor);
+//console.log("Your random color was; " + randomColor);
+//analyzeColor(randomColor);
 
 /**
  * TODO:
  * Comment out the code above, and refactor your function to use a switch-case statement
  */
-//  var switchCaseColor = prompt("Hi! What's your favorite color?")
-//  var switchCaseColor = switchCaseColor.toLowerCase()
+ var switchCaseColor = prompt("Hi! What's your favorite color?")
+ var switchCaseColor = switchCaseColor.toLowerCase()
 
-//function analyzeColor() {
-    //switch (true) {
-        //case colors.includes(switchCaseColor):
-          //  alert("Nice! " + switchCaseColor + " is an awesome color!");
-        //    break;
-      //  default:
-    //        alert("Sorry, I haven't heard of " + switchCaseColor + " before...")
-  //  };
-//};
+function analyzeColor() {
+    switch (true) {
+        case colors.includes(switchCaseColor):
+           alert("Nice! " + switchCaseColor + " is an awesome color!");
+           break;
+       default:
+           alert("Sorry, I haven't heard of " + switchCaseColor + " before...")
+   };
+};
 /**
  * TODO:
  * Prompt the user for a color when the page loads, and pass the input from the
