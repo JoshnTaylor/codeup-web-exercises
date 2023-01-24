@@ -62,43 +62,65 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * TODO:
  * Comment out the code above, and refactor your function to use a switch-case statement
  */
- var switchCaseColor = prompt("Hi! What's your favorite color?")
- var switchCaseColor = switchCaseColor.toLowerCase()
-
-function analyzeColor() {
-    switch (true) {
-        case colors.includes(switchCaseColor):
-           alert("Nice! " + switchCaseColor + " is an awesome color!");
-           break;
-       default:
-           alert("Sorry, I haven't heard of " + switchCaseColor + " before...")
-   };
-};
+//  var switchCaseColor = prompt("Hi! What's your favorite color?")
+//  var switchCaseColor = switchCaseColor.toLowerCase()
+//
+// function analyzeColor(switchCaseColor) {
+//      switch (true) {
+//         case switchCaseColor === "red":
+//             console.log("Nice! Red is the color of an apple!");
+//             break;
+//         case switchCaseColor === "orange":
+//             console.log("Nice! Orange is the color of an orange!");
+//             break;
+//         case switchCaseColor === "yellow":
+//             console.log("Nice! Yellow is the color of a lemon!");
+//             break;
+//         case switchCaseColor === "green":
+//             console.log("Nice! Green is the color of a lime!");
+//             break;
+//         case switchCaseColor === "blue":
+//             console.log("Nice! Blue is the color of a blueberry!");
+//             break;
+//         case switchCaseColor === "indigo":
+//             console.log("Nice! Indigo is the color of a plum!");
+//             break;
+//         case switchCaseColor === "violet":
+//             console.log("Nice! Violet is the color of a raspberry!");
+//             break;
+//         default:
+//             console.log("Sorry, I haven't heard of " + switchCaseColor + " before...")
+//             break;
+//     }
+// }
+// analyzeColor(switchCaseColor);
 /**
  * TODO:
  * Prompt the user for a color when the page loads, and pass the input from the
  * user to your `analyzeColor` function. Alert the return value from your
  * function to show it to the user.
  */
-//var colorName = prompt("What is your favorite color?");
-//var colorName = colorName.toLowerCase()
+var colorName = prompt("What is your favorite color?");
+var colorName = colorName.toLowerCase()
 
-//function analyzeColor() {
-//    if (colorName === "red") {
-//        alert("Nice! Red is the color of an apple!")
-//    } else if (colorName === "orange") {
-//        alert("Cool! Orange is the color of an orange!")
-//    } else if (colorName === "yellow") {
-//        alert("Sweet! Yellow is the color of a lemon!")
-//    } else if (colorName === "green") {
-//        alert("Wicked! Green is the color of a lime!")
-//    } else if (colorName === "blue") {
-//        alert("Excellent! Blue is the color of a blueberry!")
-//    } else if (colorName === "purple") {
-//        alert("Phenomenal! Purple is the color of a plum!")
-//    } else {
-//        alert("Huh... I haven't heard of " + colorName + " before.")
-//    }};
+function analyzeColor(colorName) {
+   if (colorName === "red") {
+       alert("Nice! Red is the color of an apple!")
+   } else if (colorName === "orange") {
+       alert("Cool! Orange is the color of an orange!")
+   } else if (colorName === "yellow") {
+       alert("Sweet! Yellow is the color of a lemon!")
+   } else if (colorName === "green") {
+       alert("Wicked! Green is the color of a lime!")
+   } else if (colorName === "blue") {
+       alert("Excellent! Blue is the color of a blueberry!")
+   } else if (colorName === "purple") {
+       alert("Phenomenal! Purple is the color of a plum!")
+   } else {
+       alert("Huh... I haven't heard of " + colorName + " before.")
+    }
+};
+analyzeColor(colorName);
 /* ########################################################################## */
 
 /**
@@ -132,7 +154,7 @@ function analyzeColor() {
 // Generate a random number between 0 and 6
 // var luckyNumber = Math.floor(Math.random() * 6);
 
-/**
+/*
  * TODO:
  * Write some JavaScript that uses a `confirm` dialog to ask the user if they
  * would like to enter a number. If they click 'Ok', prompt the user for a
@@ -149,4 +171,5 @@ function analyzeColor() {
  *
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
+
  */
