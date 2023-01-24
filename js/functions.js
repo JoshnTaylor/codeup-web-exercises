@@ -50,7 +50,14 @@ var random = Math.floor((Math.random() * 3) + 1);
  * number)
  */
 function isTwo(x) {
-return x == 2
+return x === 2
+}
+
+console.log("Here is your random number;" + random)
+if(isTwo(random)) {
+    alert("Nice, that's the same as your number in your isTwo function!")
+} else {
+    alert("Sorry, that's not the same as your number in your isTwo function...")
 }
 /**
  * TODO:
