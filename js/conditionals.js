@@ -100,27 +100,27 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * user to your `analyzeColor` function. Alert the return value from your
  * function to show it to the user.
  */
-var colorName = prompt("What is your favorite color?");
-var colorName = colorName.toLowerCase()
-
-function analyzeColor(colorName) {
-   if (colorName === "red") {
-       alert("Nice! Red is the color of an apple!")
-   } else if (colorName === "orange") {
-       alert("Cool! Orange is the color of an orange!")
-   } else if (colorName === "yellow") {
-       alert("Sweet! Yellow is the color of a lemon!")
-   } else if (colorName === "green") {
-       alert("Wicked! Green is the color of a lime!")
-   } else if (colorName === "blue") {
-       alert("Excellent! Blue is the color of a blueberry!")
-   } else if (colorName === "purple") {
-       alert("Phenomenal! Purple is the color of a plum!")
-   } else {
-       alert("Huh... I haven't heard of " + colorName + " before.")
-    }
-};
-analyzeColor(colorName);
+// var colorName = prompt("What is your favorite color?");
+// var colorName = colorName.toLowerCase()
+//
+// function analyzeColor(colorName) {
+//    if (colorName === "red") {
+//        alert("Nice! Red is the color of an apple!")
+//    } else if (colorName === "orange") {
+//        alert("Cool! Orange is the color of an orange!")
+//    } else if (colorName === "yellow") {
+//        alert("Sweet! Yellow is the color of a lemon!")
+//    } else if (colorName === "green") {
+//        alert("Wicked! Green is the color of a lime!")
+//    } else if (colorName === "blue") {
+//        alert("Excellent! Blue is the color of a blueberry!")
+//    } else if (colorName === "purple") {
+//        alert("Phenomenal! Purple is the color of a plum!")
+//    } else {
+//        alert("Huh... I haven't heard of " + colorName + " before.")
+//     }
+// };
+// analyzeColor(colorName);
 /* ########################################################################## */
 
 /**
@@ -142,7 +142,31 @@ analyzeColor(colorName);
  * Test your function by passing it various values and checking for the expected
  * return value.
  */
-
+// var totalAmount = prompt("How much was your total today?")
+// var luckyNumber = parseFloat(prompt("What lucky number did you get?"))
+//
+// function calculateTotal(totalAmount, luckyNumber) {
+//     if (luckyNumber === 0) {
+//         alert("Sorry! You didn't win a discount. :( Your total today is; $" + totalAmount)
+//     } else if (luckyNumber === 1) {
+//         var tenPercent = totalAmount - (.1 * totalAmount)
+//         alert("Nice! That's 10% off! Your total today is; $" + tenPercent)
+//     } else if (luckyNumber === 2) {
+//         var twentyPercent = totalAmount - (.2 * totalAmount)
+//         alert("Nice! That's 20% off! Your total today is; $" + twentyPercent)
+//     } else if (luckyNumber === 3) {
+//         var thirtyPercent = totalAmount - (.3 * totalAmount)
+//         alert("Nice! That's 30% off! Your total today is; $" + thirtyPercent)
+//     } else if (luckyNumber === 4) {
+//         var fortyPercent = totalAmount - (.4 * totalAmount)
+//         alert("Nice! That's 40% off! Your total today is; $" + fortyPercent)
+//     } else if (luckyNumber === 5) {
+//         alert("Nice! That's 100% off! Your total today is; $0")
+//     } else {
+//         alert("That wasn't one of the numbers we gave out...")
+//     }
+// };
+// calculateTotal(totalAmount, luckyNumber);
 /**
  * TODO:
  * Uncomment the line below to generate a random number between 0 and 5.
@@ -152,9 +176,32 @@ analyzeColor(colorName);
  * price before the discount was, and what their price after the discount is.
  */
 // Generate a random number between 0 and 6
-// var luckyNumber = Math.floor(Math.random() * 6);
-
-/*
+var luckyNumber = Math.floor(Math.random() * 6);
+var totalAmount = prompt("How much was your total today?")
+alert("Your lucky number is... " + luckyNumber + "!")
+function calculateTotal(totalAmount, luckyNumber) {
+    if (luckyNumber === 0) {
+        alert("Sorry! You didn't win a discount. :( Your total today is; $" + totalAmount)
+    } else if (luckyNumber === 1) {
+        var tenPercent = totalAmount - (.1 * totalAmount)
+        alert("Nice! That's 10% off! Your total today is; $" + tenPercent)
+    } else if (luckyNumber === 2) {
+        var twentyPercent = totalAmount - (.2 * totalAmount)
+        alert("Nice! That's 20% off! Your total today is; $" + twentyPercent)
+    } else if (luckyNumber === 3) {
+        var thirtyPercent = totalAmount - (.3 * totalAmount)
+        alert("Nice! That's 30% off! Your total today is; $" + thirtyPercent)
+    } else if (luckyNumber === 4) {
+        var fortyPercent = totalAmount - (.4 * totalAmount)
+        alert("Nice! That's 40% off! Your total today is; $" + fortyPercent)
+    } else if (luckyNumber === 5) {
+        alert("Nice! That's 100% off! Your total today is; $0")
+    } else {
+        alert("That wasn't one of the numbers we gave out...")
+    }
+};
+calculateTotal(totalAmount, luckyNumber);
+/**
  * TODO:
  * Write some JavaScript that uses a `confirm` dialog to ask the user if they
  * would like to enter a number. If they click 'Ok', prompt the user for a
@@ -171,5 +218,26 @@ analyzeColor(colorName);
  *
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
-
  */
+
+
+function numberInfo(myNumber) {
+    if (confirm("Would you like to enter a number?")) {
+        var myNumber = parseFloat(prompt("What number would you like to analyze?"))
+        if (myNumber % 2) {
+            alert(myNumber + " is odd!")
+        } else {
+            alert(myNumber + " is even!")
+        }
+        alert("If you add " + myNumber + " to 100, you get; " + (myNumber + 100))
+        if (Math.sign(myNumber) == 1) {
+            alert("Your number is positive!")
+        } else {
+            alert("Your number is negative!")
+        }
+    } else {
+        alert("Well then... Fine...")
+    }
+};
+
+numberInfo();
