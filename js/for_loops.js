@@ -14,7 +14,7 @@ function showMultiplicationTable(x) {
         console.log (x + " x 10 = " + (x * 10)))
 }
 for (var y = 0; y < 10; y++ ) {
-    var random = Math.floor(Math.random() * (200 - 20 + 1) + 20)
+    var random = Math.floor(Math.random() * (200 - 20) + 20)
     if (random % 2 !== 0) {
         console.log(random + " is odd!")
     } else {
