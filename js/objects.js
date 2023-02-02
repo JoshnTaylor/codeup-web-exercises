@@ -60,18 +60,6 @@ console.log("_ _ _ HEB WORD PROBLEM _ _ _")
         }
     });
 
-    // shoppers.discountOffer = function (){
-    //     var moneyToSpend = 200 - shoppers.amount
-    //     console.log(moneyToSpend)
-    //     if (moneyToSpend >= 200) {
-    //         console.log("Sorry " + shoppers.name + ", you don't rate our discount. Please spend " + moneyToSpend + " more dollars to recieve our discount.")
-    //     } else {
-    //         console.log("Thank you for your business " + shoppers.name + "! Your discount has been applied.")
-    //     }
-    // }
-    // shoppers.forEach(function (shopper) {
-
-    // })
     /** TODO:
      * Create an array of objects that represent books and store it in a
      * variable named `books`. Each object should have a title and an author
@@ -84,7 +72,15 @@ console.log("_ _ _ HEB WORD PROBLEM _ _ _")
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
+    console.log("_ _ _ BOOKS WORD PROBLEM _ _ _")
 
+    var books = [
+        {name: "The Way of the Shadow", author: "Brent Weeks"},
+        {name: "Eragon", author: "Christopher Paolini"},
+        {name: "Feed", author: "Mira Grant"},
+        {name: "The Black Prism", author: "Brent Weeks"},
+        {name: "Red Rising", author: "Pierce Brown"}
+    ];
     /**
      * TODO:
      * Loop through the books array and output the following information about
@@ -109,6 +105,13 @@ console.log("_ _ _ HEB WORD PROBLEM _ _ _")
      *      ---
      *      ...
      */
+    books.forEach(function (book, index){
+        for(let x = 1;x < 2; x++ ) {
+            console.log("Book # " + (index + 1))
+            console.log("Author: " + book.author)
+            console.log("Title: " + book.name)
+        }});
+
 
     /**
      * Bonus:
