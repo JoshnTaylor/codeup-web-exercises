@@ -2,3 +2,63 @@
     color: purple; /* single line comment */
     text-decoration: underline;
 }
+#top {
+    text-align: center;
+}
+
+h2 {
+    color: coral;
+    text-decoration: underline;
+}
+body {background-color: aquamarine;
+    background-image: url("https://i.pinimg.com/originals/b9/66/9e/b9669e9c8ef883ca49bac32d4f18b093.jpg");
+    background-repeat: no-repeat;
+    background-position: right 5% top 20%;
+    background-position-y: 200px;
+    background-size: 50%;
+    border: 5px orchid;
+    border-style: ridge;
+}
+ul li {
+    margin: 0;
+    padding: 20px 50px 10px;
+    list-style: none;
+    background-image: url("https://png.pngitem.com/pimgs/s/383-3835417_survival-version-hack-dtech-transparent-background-half-life.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 30px;
+}
+
+body {
+    font-family: "Roboto Light", monospace;
+    font-weight: bolder;
+}
+
+table, th {
+    border: 3px black;
+    border-style: double;
+    font-family: "American Typewriter";
+}
+td {
+    border: 1px black;
+    border-style: double;
+    padding: 10px;
+}
+
+img {
+    border: 5px orchid;
+    border-style: ridge;
+}
+
+a:link {
+    color: blue;
+}
+a:visited {
+    color: yellow;
+}
+a:hover {
+    color: red;
+}
+a:active {
+    color: black;
+}
