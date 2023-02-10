@@ -106,11 +106,10 @@ console.log("_ _ _ HEB WORD PROBLEM _ _ _")
      *      ...
      */
     books.forEach(function (book, index){
-        for(let x = 1;x < 2; x++ ) {
             console.log("Book # " + (index + 1))
             console.log("Author: " + book.author)
             console.log("Title: " + book.name)
-        }});
+        });
 
 
     /**
