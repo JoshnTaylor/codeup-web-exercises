@@ -1,0 +1,57 @@
+/*Mobile*/
+@media screen and (min-width:300px) and (max-width:992px) {
+    .alert-info {
+        background-color: lightcyan;
+        border: 3px lightgrey solid;
+        padding: 1em;
+        text-align: center;
+    }
+    .alert-info a {
+        text-decoration: none;
+        color: black;
+    }
+    body {
+        text-align: center;
+        font-family: Arial, "Arial Black";
+    }
+    h1 {
+        width: 100%;
+        margin: auto;
+        margin-top: .5em;
+        font-weight: bolder;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        width: auto\9;
+    }
+    li {
+        display: flex;
+        justify-content: center;
+        background-color: lightgrey;
+        padding: 1em;
+        margin: 1em;
+        margin-left: -1em;
+    }
+    li a {
+
+        color: blue;
+        margin: auto;
+    }
+    section {
+        text-align: left;
+    }
+    .sub-section {
+        font-style: italic;
+    }
+    footer {
+        text-align: left;
+        list-image-1: ;
+    }
+}
+/*Desktop*/
+@media screen and (min-width:993px) {
+    selector {
+        property: value;
+    }
+}
