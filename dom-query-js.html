@@ -26,16 +26,41 @@
     culpa qui officia deserunt mollit anim id est laborum.
 </p>
 
+<button id="btn1">JS IS COOL!!</button>
+<button id="btn2">MAKE IT RED!!</button>
+<button id="btn3">Back to white I guess...</button>
+<button id="btn4">BOOM!</button>
+
 <script>
-    (function() {
+    (function (){
         "use strict";
+
+        var buttonOne = document.getElementById("btn1");
+        var buttonTwo = document.getElementById("btn2");
+        var buttonThree = document.getElementById("btn3");
+        var buttonFour = document.getElementById("btn4");
+
+        buttonOne.addEventListener("click", function () {
+            mainHeader.innerHTML = ("Javascript is cool!");
+        })
+        buttonTwo.addEventListener("click", function () {
+            document.body.style.backgroundColor = "red";
+        })
+        buttonThree.addEventListener("click", function () {
+            document.body.style.backgroundColor = "white";
+        })
+        buttonFour.addEventListener("click", function () {
+            document.body.style.display = "none";
+        })
+
+
         // TODO: Uncomment next line and get the main header element by id
         var mainHeader = document.getElementById("main-header");
 
         // TODO: Set inner html of mainHeader to "JavaScript is Cool"
-        mainHeader.innerHTML = "Javascript is cool!"
+        //mainHeader.innerHTML = "Javascript is cool!"
         // TODO: Uncomment the next line and get the sub header element by id
-         var subHeader = document.getElementById("sub-header");
+        var subHeader = document.getElementById("sub-header");
 
         // TODO: Set the text color of subHeader to blue
         subHeader.style.color = "blue";
