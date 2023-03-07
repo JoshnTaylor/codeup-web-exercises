@@ -18,10 +18,22 @@
 
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 <script>
-    $('.codeup').css('font-size', '20px')
-    $('.important, .codeup, .italy').css('background-color', 'yellow')
-    var contents = $('#pageTitle').html();
-    alert(contents)
+
+    $('h1').click(function() {
+        $('body').css('background-color', 'yellow')
+    })
+    $('p').dblclick(function () {
+        $('p').css('font-size', '100px')
+    })
+    $('li').hover(
+        function () {
+            $(this).css('color', 'red')
+        },
+        function () {
+            $(this).css('color', 'black')
+        }
+    );
+
 </script>
 </body>
 </html>
