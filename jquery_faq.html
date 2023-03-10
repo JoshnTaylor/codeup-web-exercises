@@ -3,8 +3,52 @@
 <head>
 	<meta charset="UTF-8">
 	<title>JQUERY FAQ</title>
+    <link rel="stylesheet" href="css/jquery_faq.css">
+    <script src="/js/jquery.js"></script>
 </head>
 <body>
+<dl>
+  <dt>Where is the park?</dt>
+  <dd class="invisible">Good question, it's over the river and through the woods!</dd>
+
+  <dt>How do I get there?</dt>
+  <dd class="invisible">By car! By boat! Or by Plane!</dd>
+
+  <dt>When is  the park open?</dt>
+  <dd class="invisible">Monday thru Friday, 8 AM to 8 PM!</dd>
+
+  <dt>Are dogs allowed at your park?</dt>
+  <dd class="invisible">Absolutely!</dd>
+
+  <dt>Are cats allowed at your park?</dt>
+  <dd class="invisible">All animals are allowed on our park property!</dd>
+
+  <dt>How long is your local hiking trail?</dt>
+  <dd class="invisible">8 miles, with built in amenities along the path!</dd>
+
+  <dt>Is there an entry fee?</dt>
+  <dd class="invisible">Yes, to keep our parks up to date and cared for it will be 5 dollars
+  per person.</dd>
+
+  <dt>Is there on site parking?</dt>
+  <dd class="invisible">Yes! We have an abundance of parking spaces at the beginning of our trailhead.</dd>
+
+  <dt>Are bikes allowed on your park?</dt>
+  <dd class="invisible">To protect our wildlife, bikes are not allowed on the paths.</dd>
+
+  <dt>Do you sell sun screen?</dt>
+  <dd class="invisible">We sell sun screen and many other useful items you may have forgot at our gift shop!</dd>
+</dl>
+<button type="button" class="btn-primary">Show/Hide Answers</button>
+
+<script>
+  $('dt').click(function () {
+    $(this).toggleClass('highlighted')
+  })
+  $('.btn-primary').click(function() {
+    $("dd").toggleClass('invisible')
+  });
+</script>
 
 </body>
 </html>
