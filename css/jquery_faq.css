@@ -7,3 +7,9 @@ dt {
 .highlighted {
 	background-color: yellow;
 }
+.bold {
+	font-weight: normal;
+}
+.blueify {
+	color: blue;
+}
